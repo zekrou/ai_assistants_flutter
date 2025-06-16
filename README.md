@@ -1,16 +1,20 @@
-# ozai_chatboot
+Ozai Chatbot is a simple and modular Flutter mobile application featuring two AI-powered assistants:
 
-A new Flutter project.
+🧠 Raouf AI – your sport planning assistant.
+💼 L'Boudi AI – your business and management advisor.
+The app uses the DeepSeek Chat API to generate intelligent and contextual responses in real-time.
 
-## Getting Started
+✨ Features
+Home screen with selector between two assistants
+AI-based chat interface using DeepSeek
+Clean Flutter UI with theming
+FloatingActionButton demo with counter (for testing)
+Modular structure and easy to extend
 
-This project is a starting point for a Flutter application.
+🔐 DeepSeek API Key Setup
+The app uses the DeepSeek Chat API to generate messages.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You must add your API key in ChatService.dart here: 
+headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': 'Bearer YOUR_DEEPSEEK_API_KEY', } 
+➡️ Replace YOUR_DEEPSEEK_API_KEY with your real API key from https://deepseek.com. 
+🛡️ Tip: For security, consider loading the key from an .env file or secure storage in production.
